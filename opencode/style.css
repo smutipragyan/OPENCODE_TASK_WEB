@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: black;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+.logo{
+    font-size: 35px;
+    color: wheat;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.nav a{
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 80px;
+}
+.nav a:hover{
+    color: aliceblue;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background: black;
+    border-radius: 15px;
+    padding: 5px;
+}
+  
+.home{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background:url(image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    align-content: center;
+    box-sizing: border-box;
+    border: 5px dotted white;
+    padding: 20px;
+    margin: 50px;
+    background: rgba(0, 0, 0, 0.3); 
+    color: rgb(185, 26, 206);
+}
+.btm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.btm:hover{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.main{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 100px;
+    padding-left: 60%;
+    background:url(bc.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container h2{
+    font-size: 45px;
+    font-weight: 400;
+    color: aqua;
+    text-decoration: underline;
+    text-align: center;
+}
+.container {
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 40px;
+    border: 3px dotted white;
+}
+.container h4{
+    font-size: 25px;
+    font-weight: 400;
+    color: aliceblue;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.container h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: aliceblue;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+.contact{
+    font-size: 35px;
+    font-weight: 40px;
+    color: aqua;
+    text-decoration: underline;
+}
+.cicon{
+    display: flex;
+    bottom: 70px;
+    width: 80%;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    justify-content: space-between;
+}
+.cicon a{
+    position: relative;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    border-radius: 70%;
+    color: rgb(55, 135, 226);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.cicon a::before{
+    content: '';
+    position: absolute;
+    display: inline-flex;
+    top: 0;
+    left: 0;
+    width: 0%;
+    background: black;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+}
+.cicon a:hover::before{
+    width: 100%;
+}
